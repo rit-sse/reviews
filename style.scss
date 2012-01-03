@@ -54,9 +54,9 @@ h1 {
 
     margin: 0.5em 0; padding-bottom: 0.5em;
     border-top: 1px solid #999;
-    width: 60%;
 
     @media screen and (min-device-width: 640px) {
+        width: 60%;
         border: none;
         margin-bottom: 1.5em;
     }
@@ -88,11 +88,24 @@ h1 {
 }
 
 aside {
+
+    @media screen and (max-device-width: 640px) {
+        margin: 16px 8px 8px;
+        padding: 8px;
+        background: $dark_blue;
+        color: #fff;
+
+        a {
+            color: #fff;
+        }
+    }
+
     @media screen and (min-device-width: 640px) {
         padding: 1%;
         width: 38%;
         position: absolute;
         left: 60%; top: 120px;
+        border: none;
     }
 }
 
