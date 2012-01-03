@@ -43,9 +43,10 @@ h1 {
 
 
 .title {
-    margin: 0;
+    margin-top: 0.5em;
 
     @media screen and (min-device-width: 640px) {
+        margin-top: 0;
         margin-left: 0.5em;
         padding: 0.9em 0.5em;
         display: inline-block;
@@ -57,6 +58,11 @@ h1 {
 
     margin: 0.5em 0; padding-bottom: 0.5em;
     border-top: 1px solid #999;
+
+    @media screen and (min-device-width: 640px) {
+        border: none;
+        margin-bottom: 1.5em;
+    }
 
     h1 {
         font-size: 1.2em;
@@ -78,5 +84,6 @@ h1 {
                 }
             }
         }
+
     }
 }
