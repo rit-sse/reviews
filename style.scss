@@ -12,6 +12,7 @@ html {
 body {
     margin: 0; padding: 0;
     font-family: sans-serif;
+    color: #222;
 }
 
 header {
@@ -25,4 +26,7 @@ header {
     background-image: -webkit-linear-gradient( $blue, $dark_blue 99%, #333 99% );
     background-image: -o-linear-gradient( $blue, $dark_blue 99%, #333 99% );
     background-image: -khtml-linear-gradient( $blue, $dark_blue 99%, #333 99% );
+}
+
+h1 {
 }
