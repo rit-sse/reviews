@@ -26,7 +26,36 @@ header {
     background-image: -webkit-linear-gradient( $blue, $dark_blue 99%, #333 99% );
     background-image: -o-linear-gradient( $blue, $dark_blue 99%, #333 99% );
     background-image: -khtml-linear-gradient( $blue, $dark_blue 99%, #333 99% );
+
 }
 
 h1 {
+    margin: 0.6em 0 0.4em; padding: 0 0.4em;
+    font-size: 1.3em;
+}
+
+
+.title {
+    margin-bottom: 0;
+}
+
+.course {
+
+    margin: 0.5em 0; padding-bottom: 0.5em;
+    border-top: 1px solid #999;
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .review {
+
+        margin: 0 0.4em;
+
+        h1 {
+            margin-left: 0; padding-left: 0;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    }
 }
