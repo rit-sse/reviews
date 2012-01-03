@@ -1,0 +1,70 @@
+/* CSS 3 Mixins 
+ * Handles all the silly cross-browser CSS3 intricacies and duplication, so
+ * other stylesheets look nice.
+ */
+
+@mixin linear-gradient( $top, $bottom ) {
+    background: $bottom;
+    background-image: linear-gradient( $top, $bottom );
+    background-image: -moz-linear-gradient( $top, $bottom );
+    background-image: -o-linear-gradient( $top, $bottom );
+    background-image: -khtml-linear-gradient( $top, $bottom );
+    background-image: -webkit-linear-gradient( $top, $bottom );
+}
+
+@mixin box-shadow( $args ){
+    box-shadow: $args;
+    -moz-box-shadow: $args;
+    -o-box-shadow: $args;
+    -khtml-box-shadow: $args;
+    -webkit-box-shadow: $args;
+}
+
+
+@mixin text-shadow( $args ){
+    text-shadow: $args;
+    -moz-text-shadow: $args;
+    -o-text-shadow: $args;
+    -khtml-text-shadow: $args;
+    -webkit-text-shadow: $args;
+}
+
+@mixin border-radius( $args ){
+    border-radius: $args;
+    -moz-border-radius: $args;
+    -o-border-radius: $args;
+    -khtml-border-radius: $args;
+    -webkit-border-radius: $args;
+}
+
+@mixin border-top-right-radius( $args ){
+    border-top-right-radius: $args;
+    -moz-border-top-right-radius: $args;
+    -o-border-top-right-radius: $args;
+    -khtml-border-top-right-radius: $args;
+    -webkit-border-top-right-radius: $args;
+}
+
+@mixin border-bottom-right-radius( $args ){
+    border-bottom-right-radius: $args;
+    -moz-border-bottom-right-radius: $args;
+    -o-border-bottom-right-radius: $args;
+    -khtml-border-bottom-right-radius: $args;
+    -webkit-border-bottom-right-radius: $args;
+}
+
+@mixin border-bottom-left-radius( $args ){
+    border-bottom-left-radius: $args;
+    -moz-border-bottom-left-radius: $args;
+    -o-border-bottom-left-radius: $args;
+    -khtml-border-bottom-left-radius: $args;
+    -webkit-border-bottom-left-radius: $args;
+}
+
+@mixin border-top-left-radius( $args ){
+    border-top-left-radius: $args;
+    -moz-border-top-left-radius: $args;
+    -o-border-top-left-radius: $args;
+    -khtml-border-top-left-radius: $args;
+    -webkit-border-top-left-radius: $args;
+}

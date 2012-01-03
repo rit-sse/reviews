@@ -1,0 +1,28 @@
+@import 'globals';
+
+header, nav, article {
+    display: block;
+}
+
+
+html {
+    margin: 0; padding: 0;
+}
+
+body {
+    margin: 0; padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 0.5em;
+    text-align: center;
+
+    color: #fff;
+    background: $dark_blue;
+    background-image: linear-gradient( $blue, $dark_blue 99%, #333 99% );
+    background-image: -moz-linear-gradient( $blue, $dark_blue 99%, #333 99% );
+    background-image: -webkit-linear-gradient( $blue, $dark_blue 99%, #333 99% );
+    background-image: -o-linear-gradient( $blue, $dark_blue 99%, #333 99% );
+    background-image: -khtml-linear-gradient( $blue, $dark_blue 99%, #333 99% );
+}
