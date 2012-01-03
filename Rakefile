@@ -10,3 +10,8 @@ end
 file "style.css" => "style.scss" do |t|
   `sass #{t.prerequisites[0]} #{t.name}`
 end
+
+
+task :clean do |t|
+  rm %W( index.html style.css )
+end
