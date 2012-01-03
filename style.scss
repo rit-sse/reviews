@@ -10,13 +10,14 @@ html {
 }
 
 body {
-    margin: 0; padding: 0;
+    margin: 0 auto; padding: 0;
+    max-width: 960px;
     font-family: sans-serif;
     color: #222;
 }
 
 header {
-    padding: 0.5em;
+    padding: 8px;
     text-align: center;
 
     color: #fff;
@@ -27,6 +28,12 @@ header {
     background-image: -o-linear-gradient( $blue, $dark_blue 99%, #333 99% );
     background-image: -khtml-linear-gradient( $blue, $dark_blue 99%, #333 99% );
 
+    @media screen and (min-device-width: 640px) {
+        float: left;
+        width: 250px; height: 59px;
+        @include box-shadow( 0 1px 3px darken( $dark_blue, 20% ) );
+    }
+
 }
 
 h1 {
@@ -36,7 +43,14 @@ h1 {
 
 
 .title {
-    margin-bottom: 0;
+    margin: 0;
+
+    @media screen and (min-device-width: 640px) {
+        margin-left: 0.5em;
+        padding: 0.9em 0.5em;
+        display: inline-block;
+        font-size: 1.7em;
+    }
 }
 
 .course {
@@ -50,12 +64,19 @@ h1 {
 
     .review {
 
-        margin: 0 0.4em;
+        margin: 0 0.4em 0.4em;
 
         h1 {
             margin-left: 0; padding-left: 0;
             font-size: 1em;
             font-weight: bold;
+
+            @media screen and (min-device-width: 640px) {
+                display: inline-block;
+                &:after {
+                    content: " - ";
+                }
+            }
         }
     }
 }
