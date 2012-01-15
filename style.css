@@ -69,6 +69,9 @@ h1 {
           .course .review h1:after {
             content: " - "; } }
 
+.content {
+  margin: 1em; }
+
 @media screen and (max-device-width: 640px) {
   aside {
     margin: 16px 8px 8px;
